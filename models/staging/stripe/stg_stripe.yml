@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: payment raw data
+    columns:
+    - name: payment_id
+      description: primary key for payment table
+      tests:
+        - unique
+        - not_null
+    - name: payment_method
+      description: '{{ doc("payment_method")}}'
+  
+       
