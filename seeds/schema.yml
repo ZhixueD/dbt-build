@@ -1,0 +1,12 @@
+version: 2
+
+seeds:
+  - name: employees
+    description: lookup table
+    columns:
+    - name: employee_id
+      description: primary key of employees
+      tests:
+        - unique
+        - not_null
+    
